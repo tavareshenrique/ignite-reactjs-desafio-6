@@ -1,5 +1,3 @@
-export default function Home() {
-  return (
-    <h1>WorldTrip</h1>
-  )
+export default function Home(): JSX.Element {
+  return <h1>WorldTrip</h1>;
 }
