@@ -1,3 +1,12 @@
+import { Header } from 'components/Header';
+import { Banner } from 'components/Banner';
+
 export default function Home(): JSX.Element {
-  return <h1>WorldTrip</h1>;
+  return (
+    <>
+      <Header />
+
+      <Banner />
+    </>
+  );
 }
