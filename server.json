@@ -1,0 +1,46 @@
+{
+  "continents": [
+    {
+      "id": 1,
+      "name": "Europa",
+      "description": "Conheça o continente mais antigo do mundo.",
+      "link": "continents/europa",
+      "image": "europe.svg"
+    },
+    {
+      "id": 2,
+      "name": "América do Sul",
+      "description": "Conheça o que de mais belo a America do Sul tem para te mostrar.",
+      "link": "continents/south-america",
+      "image": "south-america.jpg"
+    },
+    {
+      "id": 3,
+      "name": "América do Norte",
+      "description": "Venha conhecer o sonho Americano.",
+      "link": "continents/north-america",
+      "image": "north-america.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Ásia",
+      "description": "A cultura asiática é uma das mais belas do mundo.",
+      "link": "continents/asia",
+      "image": "asia.jpg"
+    },
+    {
+      "id": 5,
+      "name": "África",
+      "description": "A África é ainda mais linda de perto.",
+      "link": "continents/africa",
+      "image": "africa.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Oceania",
+      "description": "A oceania é inigualável.",
+      "link": "continents/oceania",
+      "image": "oceania.jpeg"
+    }
+  ]
+}

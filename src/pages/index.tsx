@@ -1,13 +1,32 @@
+import { GetStaticProps } from 'next';
+
+import api from 'services/api';
+
 import { Header } from 'components/Header';
 import { Banner } from 'components/Banner';
 import { Resources } from 'components/Resources';
+import { Carroussel } from 'components/Carrousel';
 
-export default function Home(): JSX.Element {
+import { IHomeProps } from './@interfaces';
+
+export default function Home({ continents }: IHomeProps): JSX.Element {
   return (
     <>
       <Header />
       <Banner />
       <Resources />
+
+      <Carroussel data={continents} />
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await api.get('continents');
+
+  return {
+    props: {
+      continents: data,
+    },
+  };
+};
