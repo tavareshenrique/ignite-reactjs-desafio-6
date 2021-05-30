@@ -4,43 +4,164 @@
       "id": 1,
       "name": "Europa",
       "description": "Conheça o continente mais antigo do mundo.",
-      "link": "continents/europa",
+      "link": "continents/1",
       "image": "europe.svg"
     },
     {
       "id": 2,
       "name": "América do Sul",
       "description": "Conheça o que de mais belo a America do Sul tem para te mostrar.",
-      "link": "continents/south-america",
+      "link": "continents/2",
       "image": "south-america.jpg"
     },
     {
       "id": 3,
       "name": "América do Norte",
       "description": "Venha conhecer o sonho Americano.",
-      "link": "continents/north-america",
+      "link": "continents/3",
       "image": "north-america.jpg"
     },
     {
       "id": 4,
       "name": "Ásia",
       "description": "A cultura asiática é uma das mais belas do mundo.",
-      "link": "continents/asia",
+      "link": "continents/4",
       "image": "asia.jpg"
     },
     {
       "id": 5,
       "name": "África",
       "description": "A África é ainda mais linda de perto.",
-      "link": "continents/africa",
+      "link": "continents/5",
       "image": "africa.jpg"
     },
     {
       "id": 6,
       "name": "Oceania",
       "description": "A oceania é inigualável.",
-      "link": "continents/oceania",
+      "link": "continents/6",
       "image": "oceania.jpeg"
+    }
+  ],
+  "cities": [
+    {
+      "id": "654c6131-2e4a-4036-91df-44cc0be4b68e",
+      "name": "Berlin",
+      "country": "Alemanha",
+      "flag": "germany.svg",
+      "continentId": 1
+    },
+    {
+      "id": "620f38a7-8d2c-4ae1-a457-273f254529ce",
+      "name": "Barcelona",
+      "country": "Espanha",
+      "flag": "spain.svg",
+      "continentId": 1
+    },
+    {
+      "id": "f859e409-fe48-4979-a6fd-b1807795f161",
+      "name": "Paris",
+      "country": "França",
+      "flag": "france.svg",
+      "continentId": 1
+    },
+    {
+      "id": "0502ad8d-9997-4f3c-b2eb-63732f9bbedc",
+      "name": "Roma",
+      "country": "Itália",
+      "flag": "italy.svg",
+      "continentId": 1
+    },
+    {
+      "id": "ce5f1601-371c-4cd6-9d6c-2fb6cc6efd45",
+      "name": "Rio de Janeiro",
+      "country": "Brasil",
+      "flag": "brazil.png",
+      "continentId": 2
+    },
+    {
+      "id": "ce5f1601-371c-4cd6-9d6c-2fb6cc6efd45",
+      "name": "Buenos Aires",
+      "country": "Argentina",
+      "flag": "argentina.svg",
+      "continentId": 2
+    },
+    {
+      "id": "ce5f1601-371c-4cd6-9d6c-2fb6cc6efd45",
+      "name": "Machu Picchu",
+      "country": "Peru",
+      "flag": "peru.svg",
+      "continentId": 2
+    },
+    {
+      "id": "ce5f1601-371c-4cd6-9d6c-2fb6cc6efd45",
+      "name": "Montevidéu",
+      "country": "Uruguai",
+      "flag": "uruguay.png",
+      "continentId": 2
+    },
+    {
+      "id": "7297197b-9a0e-4a39-a62a-926955767145",
+      "name": "New York",
+      "country": "Estados Unidos",
+      "flag": "usa.svg",
+      "continentId": 3
+    },
+    {
+      "id": "770304f5-6b2e-4417-bfad-3dfc53bf1184",
+      "name": "Los Angeles",
+      "country": "Estados Unidos",
+      "flag": "usa.svg",
+      "continentId": 3
+    },
+    {
+      "id": "4655dfaa-4c0b-4666-b306-183b206a23fc",
+      "name": "Toronto",
+      "country": "Canadá",
+      "flag": "canada.svg",
+      "continentId": 3
+    },
+    {
+      "id": "9b4e9c68-7af7-4ae7-90f0-df00c0423628",
+      "name": "Montreal",
+      "country": "Canadá",
+      "flag": "canada.svg",
+      "continentId": 3
+    },
+    {
+      "id": "40e90492-01dd-4ae6-b6c8-12e99c87afbd",
+      "name": "Tóquio",
+      "country": "Japão",
+      "flag": "japan.svg",
+      "continentId": 4
+    },
+    {
+      "id": "64bf53c2-2002-4ad7-a225-f4bc4e5e47d6",
+      "name": "Dubai",
+      "country": "Emirados Árabes",
+      "flag": "united-arab-emirates.svg",
+      "continentId": 4
+    },
+    {
+      "id": "40e90492-01dd-4ae6-b6c8-12e99c87afbd",
+      "name": "Orão",
+      "country": "Árgelia",
+      "flag": "algeria.svg",
+      "continentId": 5
+    },
+    {
+      "id": "de5dc697-cc2f-4018-a2a1-24b28f857c74",
+      "name": "Duala",
+      "country": "Camarões",
+      "flag": "cameroon.svg",
+      "continentId": 5
+    },
+    {
+      "id": "a9ac45b2-7eba-4909-879f-4ba1285c7fa9",
+      "name": "Sydney",
+      "country": "Austrália",
+      "flag": "australia.svg",
+      "continentId": 6
     }
   ]
 }
