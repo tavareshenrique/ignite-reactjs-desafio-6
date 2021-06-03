@@ -1,8 +1,9 @@
-import { Grid, Text } from '@chakra-ui/react';
+import { Flex, Grid, Heading, Text } from '@chakra-ui/react';
+import { InfoOutlineIcon } from '@chakra-ui/icons';
 
-import { Infos } from './Infos';
+import { IDetailsProps } from './@interfaces';
 
-export function Details(): JSX.Element {
+export function Details({ data }: IDetailsProps): JSX.Element {
   return (
     <Grid
       templateColumns={['1fr', '1fr', '1fr 1fr', '1.2fr 1fr']}
@@ -10,13 +11,52 @@ export function Details(): JSX.Element {
       my={['8', '20']}
     >
       <Text fontSize={['lg', 'xl', 'xl', '2xl']} textAlign="justify">
-        A Europa é, por convenção, um dos seis continentes do mundo.
-        Compreendendo a península ocidental da Eurásia, a Europa geralmente
-        divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
-        rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+        {data.description}
       </Text>
 
-      <Infos />
+      <Flex align="center" justifyContent="space-between">
+        <Flex
+          alignItems={['flex-start', 'flex-start', 'center']}
+          direction="column"
+        >
+          <Heading fontWeight="600" fontSize={['2xl', '5xl']} color="yellow">
+            {data.countries}
+          </Heading>
+          <Text fontWeight="600" fontSize={['md', 'xl']}>
+            países
+          </Text>
+        </Flex>
+        <Flex alignItems="center" direction="column">
+          <Heading fontWeight="600" fontSize={['2xl', '5xl']} color="yellow">
+            {data.languages}
+          </Heading>
+          <Text fontWeight="600" fontSize={['md', 'xl']}>
+            linguas
+          </Text>
+        </Flex>
+        <Flex alignItems="center" direction="column">
+          <Heading fontWeight="600" fontSize={['2xl', '5xl']} color="yellow">
+            {data.cities}
+          </Heading>
+          <Text
+            fontWeight="600"
+            fontSize={['md', 'xl']}
+            display="flex"
+            flexDirection="row"
+            alignItems="center"
+          >
+            cidades + 100
+            <Flex>
+              <InfoOutlineIcon
+                cursor="pointer"
+                ml="1"
+                w={['8px', '14px']}
+                h={['8px', '14px']}
+              />
+            </Flex>
+          </Text>
+        </Flex>
+      </Flex>
     </Grid>
   );
 }

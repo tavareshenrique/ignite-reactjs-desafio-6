@@ -1,8 +1,8 @@
-import { Heading, Grid } from '@chakra-ui/react';
+import { Box, Image, Flex, Heading, Text, Grid } from '@chakra-ui/react';
 
-import { City } from './City';
+import { ICitiesProps } from './@interfaces';
 
-export function Cities(): JSX.Element {
+export function Cities({ cities }: ICitiesProps): JSX.Element {
   return (
     <>
       <Heading fontSize={['2xl', '4xl']} mb="10">
@@ -15,11 +15,35 @@ export function Cities(): JSX.Element {
         justifyContent="center"
         px={['30px', '0px']}
       >
-        <City />
-        <City />
-        <City />
-        <City />
-        <City />
+        {cities.map(city => (
+          <Box key={city.id} borderRadius="4px" overflow="hidden">
+            <Image src={`/${city.image}`} h="170px" w="100%" />
+            <Flex
+              p="6"
+              alignItems="center"
+              justifyContent="space-between"
+              bg="white"
+              border="1px"
+              borderColor="yellow"
+              borderTop="0"
+            >
+              <Flex direction="column">
+                <Heading fontSize="xl" fontWeight="500">
+                  {city.name}
+                </Heading>
+                <Text mt="3" fontSize="md" fontWeight="100">
+                  {city.country}
+                </Text>
+              </Flex>
+              <Image
+                src={`/${city.flag}`}
+                w="30px"
+                h="30px"
+                borderRadius="50%"
+              />
+            </Flex>
+          </Box>
+        ))}
       </Grid>
     </>
   );
